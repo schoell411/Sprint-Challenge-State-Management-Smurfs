@@ -24,12 +24,14 @@ const SmurfForm = props => {
             <form onSubmit={() =>
             props.dispatch(addSmurf(name, age, height))}
             >
-                <input type='text' name='name' placeholder='Smurf' onChange={ changeName } value={ name }
-                />
-                <input type='text' name='age' placeholder='age' onChange={ changeAge } value={ age }
-                />
-                <input type='text' name='height' placeholder='height' onChange={ changeHeight } value={ height } 
-                />
+                <div className="textFields">
+                    <input type='text' name='name' placeholder='Smurf' onChange={ changeName } value={ name }
+                    />
+                    <input type='text' name='age' placeholder='age' onChange={ changeAge } value={ age }
+                    />
+                    <input type='text' name='height' placeholder='height' onChange={ changeHeight } value={ height } 
+                    />
+                </div>
                 <button type='submit'>
                     Add New Smurf
                 </button>
