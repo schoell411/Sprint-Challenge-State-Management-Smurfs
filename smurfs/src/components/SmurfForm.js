@@ -30,7 +30,7 @@ const SmurfForm = props => {
                 />
                 <input type='text' name='height' placeholder='height' onChange={ changeHeight } value={ height } 
                 />
-                <button>
+                <button type='submit'>
                     Add New Smurf
                 </button>
             </form>

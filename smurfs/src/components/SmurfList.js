@@ -9,7 +9,7 @@ const SmurfList = props => {
             <button onClick={() => props.dispatch(fetchSmurf())}>
                 Get Smurfs
             </button>
-            {props.isFetching && <span role='img' aria-label='loading'>🔃</span>}
+            {props.isFetching}
             {props.error && <div>{props.error.message}</div>}
             <ul>
                 {props.smurf[0] ? props.smurf.map(smurf => (
