@@ -23,10 +23,10 @@ export function fetchSmurf() {
     return function(dispatch) {
         dispatch(smurfLoading());
 
-        return axios.get(`http://localhost:333/smurfs`)
-        .then(responseA => {
-            return responseA.data})
-        .then(responseB => dispatch(smurfLoadSuccess(responseB)))
+        return axios.get(`http://localhost:3333/smurfs`)
+        .then(response => {
+            return response.data})
+        .then(response => dispatch(smurfLoadSuccess(response)))
         .catch(error => dispatch(smurfLoadFailure(error)));
     }
 }
