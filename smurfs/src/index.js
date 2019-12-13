@@ -6,7 +6,6 @@ import logger from 'redux-logger';
 import thunk from 'redux-thunk';
 import reducer from './reducers/reducer';
 import { composeWithDevTools } from 'redux-devtools-extension';
-import "./index.css";
 import App from "./components/App";
 
 const store = createStore(
